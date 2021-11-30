@@ -4,6 +4,7 @@
     height: 92vh;
     display: flex;
     position: relative;
+    border-bottom: 1px solid #dbdbdb;
 
     .log-part {
       width: 50%;
@@ -93,6 +94,7 @@
     width: 100%;
     height: 460px;
     text-align: center;
+    border-bottom: 1px solid #dbdbdb;
 
     .star-ball {
       margin: 110px 0 30px;
@@ -110,9 +112,10 @@
   }
 
   .section-one-line {
-    height: 620px;
+    height: 500px;
     display: flex;
     justify-content: space-evenly;
+    border-bottom: 1px solid #dbdbdb;
 
     .one-list {
       width: 450px;
@@ -163,15 +166,12 @@
       height: 400px;
     }
   }
-}
 
-.circle-statistic {
-  height: 480px;
+  .circle-statistic {
+    height: 480px;
+    border-bottom: 1px solid #dbdbdb;
 
-  .points {
-    ul>li::marker {
-      width: 24px!important;
-      height: 24px!important;
-    }
   }
+
 }
+

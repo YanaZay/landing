@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { VersionOneComponent } from './version-one.component';
 import { MaterialModule } from '../material.module';
 
+
 @NgModule({
   declarations: [
     VersionOneComponent
