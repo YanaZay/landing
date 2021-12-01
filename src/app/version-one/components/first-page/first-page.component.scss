@@ -1,0 +1,372 @@
+:host {
+  .log-page {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #dbdbdb;
+
+    .log-part {
+      width: 50%;
+      display: flex;
+      margin-top: 10rem;
+      margin-left: 15rem;
+
+      .mat-card.log-card {
+        width: 445px;
+        height: 30rem;
+        box-shadow: none;
+
+        .mat-card-title {
+          line-height: 60px;
+          font: {
+            size: 48px;
+            weight: 700;
+          }
+        }
+
+        .mat-card-subtitle {
+          line-height: 30px;
+          color: #585757;
+          margin-top: 20px;
+          font: {
+            size: 20px;
+            weight: 400;
+          }
+        }
+
+        .mat-card-actions {
+          .mat-form-field {
+            width: 100%;
+          }
+
+          ::ng-deep {
+            .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+              color: #24afb5;
+            }
+            .mat-form-field.mat-focused .mat-form-field-label{
+              color: #24afb5;
+            }
+          }
+
+          .subscribe-button {
+            background-color: #24afb5;
+            height: 50px;
+            width: 130px;
+            color: #ffffff;
+            margin: 0;
+            line-height: 26px;
+            font: {
+              size: 20px;
+              weight: 500;
+            };
+            transition: all ease-in-out 0.4s;
+
+            &:hover {
+              background-color: #c6f7fa;
+              color: #585757;
+            }
+          }
+        }
+
+        .mat-card-footer {
+          color: #969696;
+          padding: 0 8px;
+          line-height: 18px;
+          font: {
+            size: 13px;
+            weight: 400;
+          }
+        }
+      }
+    }
+
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .section-star {
+    width: 100%;
+    height: 460px;
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+
+    .star-ball {
+      margin: 110px 0 30px;
+    }
+
+    .star-text {
+      padding: 0 335px;
+      line-height: 30px;
+      font: {
+        size: 20px;
+        weight: 400;
+      };
+    }
+  }
+
+  .section-one-line {
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #dbdbdb;
+
+    .one-list {
+      width: 450px;
+      padding-top: 10px;
+
+      .mat-list-item {
+        display: initial;
+
+        ::ng-deep {
+          .mat-list-item-content {
+            display: block;
+            height: auto;
+          }
+
+          .one-list-title {
+            display: flex;
+            align-items: center;
+            color: #1c1c1c;
+            line-height: 32px;
+            margin-top: 40px;
+            font: {
+              size: 24px;
+              weight: 500;
+            }
+
+            img {
+              margin-right: 15px;
+            }
+          }
+
+          .one-list-text {
+            margin-top: 10px;
+            line-height: 22px;
+            color: #545454;
+            font: {
+              size: 15px;
+              weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    img.one-list-img {
+      width: 635px;
+      height: 400px;
+    }
+  }
+
+  .circle-statistic {
+    width: 100%;
+    height: 480px;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &>* {
+      width: 28%;
+    }
+    .circle {
+      #chart {
+        width: 340px;
+        height: 300px;
+      }
+    }
+
+    .points-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      .point-item {
+        display: flex;
+        margin-right: 100px;
+
+        .point {
+          background-color: #24afb5;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          margin-top: 50px;
+
+          &.two{background-color: #d3eff0;} &.tree{background-color: #dbdbdb;} &.four{background-color: #f7f7f7;}
+        }
+        .percent {
+          margin-left: 20px;
+          .percent-number {
+            color: #1c1c1c;
+            line-height: 46px;
+            font: {
+              size: 36px;
+              weight: 700;
+            }
+          }
+          .percent-name {
+            color: #585757;
+            font: {
+              size: 15px;
+            };
+          }
+        }
+      }
+    }
+
+    .description {
+      color: #585757;
+      line-height: 22px;
+      font: {
+        size: 15px;
+        weight: 400;
+      }
+
+      .note {
+        color: #969696;
+        line-height: 18px;
+        font: {
+          size: 13px;
+          weight: 400;
+        }
+      }
+    }
+  }
+
+  .short {
+    height: 900px;
+    position: relative;
+    border-bottom: 1px solid #dbdbdb;
+
+    .short-content {
+      margin: 100px auto 0;
+      width: 730px;
+      text-align: center;
+
+      .short-title {
+        color: #1c1c1c;
+        line-height: 60px;
+        font: {
+          size: 48px;
+          weight: 700;
+        };
+      }
+
+      .short-description {
+        margin-top: 20px;
+        color: #585757;
+        line-height: 30px;
+        font: {
+          size: 20px;
+          weight: 400;
+        }
+      }
+
+      .images {
+        margin-top: 60px;
+        justify-content: space-between;
+        display: flex;
+      }
+    }
+
+    .short-img {
+      position: absolute;
+      bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+  }
+
+  .reviews {
+    height: 630px;
+    text-align: center;
+
+    .commas {
+      margin-top: 125px;
+    }
+
+    .main {
+      display: flex;
+      margin: 35px 230px 0;
+      align-items: center;
+
+      .main-text {
+        margin: 0 auto;
+        width: 730px;
+        color: #585757;
+        line-height: 30px;
+        font: {
+          size: 20px;
+          weight: 400;
+        };
+      }
+
+      .mat-fab.mat-accent {
+        background-color: #ffffff;
+        color: #969696;
+        box-shadow: 0 0 2px;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+          background-color: #999999;
+          color: #545454;
+        }
+      }
+    }
+
+    .company {
+      margin-top: 40px;
+      color: #969696;
+      font: {
+        size: 50px;
+      };
+    }
+
+    .person {
+      margin-top: 30px;
+      color: #1c1c1c;
+      line-height: 26px;
+      font: {
+        size: 20px;
+        weight: 600;
+      };
+    }
+
+    .position {
+      color: #585757;
+      line-height: 22px;
+      font: {
+        size: 15px;
+        weight: 400;
+      }
+    }
+
+    .reviews-btn {
+      margin-top: 40px;
+      color: #24afb5;
+      font: {
+        size: 15px;
+        weight: 600;
+      }
+    }
+  }
+
+  .cards {
+    height: 670px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .card {
+      width: 350px;
+      height: 450px;
+    }
+  }
+
+}
+
