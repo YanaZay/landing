@@ -1,15 +1,16 @@
 <div class="header">
   <mat-toolbar class="menu">
-    <mat-list-item role="listitem" class="menu-item"><a href="#">First Link</a></mat-list-item>
-    <mat-list-item role="listitem" class="menu-item"><a href="#">Second Link</a></mat-list-item>
-    <mat-list-item role="listitem" class="menu-item"><a href="#">Third Link</a></mat-list-item>
-    <span class="menu-img"><img src="../assets/img/ball.png" alt="#"></span>
-    <mat-list-item role="listitem" class="menu-item"><a href="#">Fourth Link</a></mat-list-item>
-    <mat-list-item role="listitem" class="menu-item"><a href="#">Fifth Link</a></mat-list-item>
-    <mat-list-item role="listitem" class="menu-item"><a href="#">Sixth Link</a></mat-list-item>
+    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/first-page']">First Link</mat-list-item>
+    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/second-page']">Second Link</mat-list-item>
+    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/second-page']">Third Link</mat-list-item>
+    <span class="menu-img"><img src="../assets/img/logo.png" alt="#"></span>
+    <mat-list-item role="listitem" class="menu-item">Fourth Link</mat-list-item>
+    <mat-list-item role="listitem" class="menu-item">Fifth Link</mat-list-item>
+    <mat-list-item role="listitem" class="menu-item">Sixth Link</mat-list-item>
   </mat-toolbar>
 </div>
 
 <div class="main">
-  <app-version-one></app-version-one>
+  <router-outlet></router-outlet>
+<!--  <app-version-one></app-version-one>-->
 </div>

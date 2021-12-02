@@ -5,6 +5,8 @@ import { VersionOneModule } from './version-one/version-one.module';
 import { VersionTwoModule } from './version-two/version-two.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { MaterialModule } from './material.module';
     VersionOneModule,
     VersionTwoModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
