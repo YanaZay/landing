@@ -38,6 +38,64 @@
   .main-content {
     .welcome-page {
       height: 810px;
+      text-align: center;
+      .mat-card.log-card {
+        margin-top: 130px;
+        border: none;
+        box-shadow: none;
+        .mat-card-title {
+          color: #1c1c1c;
+          line-height: 60px;
+          font: {
+            size: 48px;
+            weight: 700;
+          };
+        }
+        .mat-card-subtitle {
+          margin-top: 20px;
+          color: #585757;
+          line-height: 30px;
+          font: {
+            size: 20px;
+            weight: 400;
+          };
+        }
+        .mat-card-actions {
+
+          ::ng-deep {
+            .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+              color: #24afb5;
+            }
+            .mat-form-field.mat-focused .mat-form-field-label{
+              color: #24afb5;
+            }
+            .mat-form-field-flex {
+              align-items: center;
+            }
+            .mat-form-field-appearance-outline .mat-form-field-flex {
+              padding: 0;
+              height: 55px;
+            }
+          }
+          .subscribe-button {
+            background-color: #24afb5;
+            height: 50px;
+            width: 130px;
+            color: #ffffff;
+            margin: 0;
+            line-height: 26px;
+            font: {
+              size: 20px;
+              weight: 500;
+            };
+            transition: all ease-in-out 0.4s;
+            &:hover {
+              background-color: #c6f7fa;
+              color: #585757;
+            }
+          }
+        }
+      }
     }
   }
 }
