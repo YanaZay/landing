@@ -1,1 +1,36 @@
-<p>second-page works!</p>
+<div class="header">
+  <div class="menu-logo">
+    <a class="menu-img" routerLink='/version-1/first-page'><img src="../../../../assets/img/2_page/logo.png" alt="#"></a>
+    <h1 class="menu-title">Section</h1>
+  </div>
+  <mat-toolbar class="menu">
+    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/first-page']">First Link</mat-list-item>
+    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/second-page']">Second Link</mat-list-item>
+    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/third-page']">Third Link</mat-list-item>
+    <mat-list-item role="listitem" class="menu-item">Fourth Link</mat-list-item>
+    <mat-list-item role="listitem" class="menu-item">Fifth Link</mat-list-item>
+  </mat-toolbar>
+</div>
+
+<div class="main-content">
+  <section class="welcome-page">
+    <mat-card class="log-card">
+      <mat-card-title>Two line long header example for your web project</mat-card-title>
+      <mat-card-subtitle>Poster can be one of the effective marketing and advertising materials. It is also a great tool to use when you want to present your.</mat-card-subtitle>
+      <mat-card-actions>
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <button mat-stroked-button class="subscribe-button">Subscribe</button>
+      </mat-card-actions>
+
+      <mat-card-footer>NNo spam, notifications only about new products, updates and freebies. You can always unsubscribe.</mat-card-footer>
+    </mat-card>
+    <img src="" alt="">
+
+  </section>
+
+</div>
+
+

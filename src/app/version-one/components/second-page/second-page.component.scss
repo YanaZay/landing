@@ -1,0 +1,43 @@
+:host {
+  .header {
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    .menu-logo {
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+      a {
+        margin-right: 10px;
+      }
+    }
+    ::ng-deep {
+      .mat-toolbar-row, .mat-toolbar-single-row.menu {
+        display: flex;
+        justify-content: end;
+        background-color: #ffffff;
+        .mat-list-item.menu-item {
+          margin-right: 30px;
+          font-family: 'Inter', sans-serif;
+          font-weight: 600;
+          color: #1c1c1c;
+          transition: all ease-in-out 0.2s;
+          &:hover {
+            color: #999999;
+          }
+          &.active {
+            color: #24afb5;
+          }
+        }
+      }
+    }
+  }
+
+  .main-content {
+    .welcome-page {
+      height: 810px;
+    }
+  }
+}

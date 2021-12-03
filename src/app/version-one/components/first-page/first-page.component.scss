@@ -1,68 +1,238 @@
 :host {
-  .log-page {
-    width: 100%;
-    height: 92vh;
-    display: flex;
-    position: relative;
-    border-bottom: 1px solid #dbdbdb;
-    .log-part {
-      width: 50%;
+  .header {
+    height: 88px;
+    ::ng-deep {
+      .mat-toolbar-row, .mat-toolbar-single-row.menu {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 0;
+        background-color: #ffffff;
+        .mat-list-item.menu-item {
+          padding: 0 30px;
+          font-family: 'Inter', sans-serif;
+          font-weight: 600;
+          color: #1c1c1c;
+          transition: all ease-in-out 0.3s;
+          &:hover {
+            color: #999999;
+          }
+          &.active {
+            color: #24afb5;
+          }
+        }
+        .menu-img {
+          padding: 0 72px;
+        }
+      }
+    }
+  }
+  .main-content {
+    .log-page {
+      height: 92vh;
       display: flex;
-      margin-top: 10rem;
-      margin-left: 15rem;
-      .mat-card.log-card {
-        width: 445px;
-        height: 30rem;
-        box-shadow: none;
-        .mat-card-title {
-          line-height: 60px;
-          font: {
-            size: 48px;
-            weight: 700;
-          }
-        }
-        .mat-card-subtitle {
-          line-height: 30px;
-          color: #585757;
-          margin-top: 20px;
-          font: {
-            size: 20px;
-            weight: 400;
-          }
-        }
-        .mat-card-actions {
-          .mat-form-field {
-            width: 100%;
-          }
-          ::ng-deep {
-            .mat-form-field-appearance-outline .mat-form-field-outline-thick {
-              color: #24afb5;
-            }
-            .mat-form-field.mat-focused .mat-form-field-label{
-              color: #24afb5;
+      position: relative;
+      border-bottom: 1px solid #dbdbdb;
+      .log-part {
+        width: 50%;
+        display: flex;
+        margin-top: 10rem;
+        margin-left: 15rem;
+        .mat-card.log-card {
+          width: 445px;
+          height: 30rem;
+          box-shadow: none;
+          .mat-card-title {
+            line-height: 60px;
+            font: {
+              size: 48px;
+              weight: 700;
             }
           }
-          .subscribe-button {
-            background-color: #24afb5;
-            height: 50px;
-            width: 130px;
-            color: #ffffff;
-            margin: 0;
-            line-height: 26px;
+          .mat-card-subtitle {
+            line-height: 30px;
+            color: #585757;
+            margin-top: 20px;
             font: {
               size: 20px;
-              weight: 500;
-            };
-            transition: all ease-in-out 0.4s;
-            &:hover {
-              background-color: #c6f7fa;
-              color: #585757;
+              weight: 400;
+            }
+          }
+          .mat-card-actions {
+            .mat-form-field {
+              width: 100%;
+            }
+            ::ng-deep {
+              .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+                color: #24afb5;
+              }
+              .mat-form-field.mat-focused .mat-form-field-label{
+                color: #24afb5;
+              }
+            }
+            .subscribe-button {
+              background-color: #24afb5;
+              height: 50px;
+              width: 130px;
+              color: #ffffff;
+              margin: 0;
+              line-height: 26px;
+              font: {
+                size: 20px;
+                weight: 500;
+              };
+              transition: all ease-in-out 0.4s;
+              &:hover {
+                background-color: #c6f7fa;
+                color: #585757;
+              }
+            }
+          }
+          .mat-card-footer {
+            color: #969696;
+            padding: 0 8px;
+            line-height: 18px;
+            font: {
+              size: 13px;
+              weight: 400;
             }
           }
         }
-        .mat-card-footer {
+      }
+      img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50vw;
+        height: 75vh;
+      }
+    }
+
+    .section-star {
+      width: 100%;
+      height: 460px;
+      text-align: center;
+      border-bottom: 1px solid #dbdbdb;
+      .star-ball {
+        margin: 110px 0 30px;
+      }
+      .star-text {
+        padding: 0 335px;
+        line-height: 30px;
+        font: {
+          size: 20px;
+          weight: 400;
+        };
+      }
+    }
+
+    .section-one-line {
+      height: 500px;
+      display: flex;
+      justify-content: space-evenly;
+      border-bottom: 1px solid #dbdbdb;
+      .one-list {
+        width: 450px;
+        padding-top: 10px;
+        .mat-list-item {
+          display: initial;
+          ::ng-deep {
+            .mat-list-item-content {
+              display: block;
+              height: auto;
+            }
+            .one-list-title {
+              display: flex;
+              align-items: center;
+              color: #1c1c1c;
+              line-height: 32px;
+              margin-top: 40px;
+              font: {
+                size: 24px;
+                weight: 500;
+              }
+              img {
+                margin-right: 15px;
+              }
+            }
+            .one-list-text {
+              margin-top: 10px;
+              line-height: 22px;
+              color: #545454;
+              font: {
+                size: 15px;
+                weight: 400;
+              }
+            }
+          }
+        }
+      }
+      img.one-list-img {
+        width: 635px;
+        height: 400px;
+      }
+    }
+
+    .circle-statistic {
+      width: 100%;
+      height: 480px;
+      border-bottom: 1px solid #dbdbdb;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      &>* {
+        width: 28%;
+      }
+      .circle {
+        #chart {
+          width: 340px;
+          height: 300px;
+        }
+      }
+
+      .points-list {
+        display: flex;
+        flex-wrap: wrap;
+        .point-item {
+          display: flex;
+          margin-right: 100px;
+          .point {
+            background-color: #24afb5;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-top: 50px;
+            &.two{background-color: #d3eff0;} &.tree{background-color: #dbdbdb;} &.four{background-color: #f7f7f7;}
+          }
+          .percent {
+            margin-left: 20px;
+            .percent-number {
+              color: #1c1c1c;
+              line-height: 46px;
+              font: {
+                size: 36px;
+                weight: 700;
+              }
+            }
+            .percent-name {
+              color: #585757;
+              font: {
+                size: 15px;
+              };
+            }
+          }
+        }
+      }
+      .description {
+        color: #585757;
+        line-height: 22px;
+        font: {
+          size: 15px;
+          weight: 400;
+        }
+        .note {
           color: #969696;
-          padding: 0 8px;
           line-height: 18px;
           font: {
             size: 13px;
@@ -71,471 +241,331 @@
         }
       }
     }
-    img {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 50vw;
-      height: 75vh;
-    }
-  }
 
-  .section-star {
-    width: 100%;
-    height: 460px;
-    text-align: center;
-    border-bottom: 1px solid #dbdbdb;
-    .star-ball {
-      margin: 110px 0 30px;
-    }
-    .star-text {
-      padding: 0 335px;
-      line-height: 30px;
-      font: {
-        size: 20px;
-        weight: 400;
-      };
-    }
-  }
-
-  .section-one-line {
-    height: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    border-bottom: 1px solid #dbdbdb;
-    .one-list {
-      width: 450px;
-      padding-top: 10px;
-      .mat-list-item {
-        display: initial;
-        ::ng-deep {
-          .mat-list-item-content {
-            display: block;
-            height: auto;
-          }
-          .one-list-title {
-            display: flex;
-            align-items: center;
-            color: #1c1c1c;
-            line-height: 32px;
-            margin-top: 40px;
-            font: {
-              size: 24px;
-              weight: 500;
-            }
-            img {
-              margin-right: 15px;
-            }
-          }
-          .one-list-text {
-            margin-top: 10px;
-            line-height: 22px;
-            color: #545454;
-            font: {
-              size: 15px;
-              weight: 400;
-            }
-          }
-        }
-      }
-    }
-    img.one-list-img {
-      width: 635px;
-      height: 400px;
-    }
-  }
-
-  .circle-statistic {
-    width: 100%;
-    height: 480px;
-    border-bottom: 1px solid #dbdbdb;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    &>* {
-      width: 28%;
-    }
-    .circle {
-      #chart {
-        width: 340px;
-        height: 300px;
-      }
-    }
-
-    .points-list {
-      display: flex;
-      flex-wrap: wrap;
-      .point-item {
-        display: flex;
-        margin-right: 100px;
-        .point {
-          background-color: #24afb5;
-          width: 24px;
-          height: 24px;
-          border-radius: 50%;
-          margin-top: 50px;
-          &.two{background-color: #d3eff0;} &.tree{background-color: #dbdbdb;} &.four{background-color: #f7f7f7;}
-        }
-        .percent {
-          margin-left: 20px;
-          .percent-number {
-            color: #1c1c1c;
-            line-height: 46px;
-            font: {
-              size: 36px;
-              weight: 700;
-            }
-          }
-          .percent-name {
-            color: #585757;
-            font: {
-              size: 15px;
-            };
-          }
-        }
-      }
-    }
-    .description {
-      color: #585757;
-      line-height: 22px;
-      font: {
-        size: 15px;
-        weight: 400;
-      }
-      .note {
-        color: #969696;
-        line-height: 18px;
-        font: {
-          size: 13px;
-          weight: 400;
-        }
-      }
-    }
-  }
-
-  .short {
-    height: 900px;
-    position: relative;
-    border-bottom: 1px solid #dbdbdb;
-    .short-content {
-      margin: 100px auto 0;
-      width: 730px;
-      text-align: center;
-      .short-title {
-        color: #1c1c1c;
-        line-height: 60px;
-        font: {
-          size: 48px;
-          weight: 700;
-        };
-      }
-      .short-description {
-        margin-top: 20px;
-        color: #585757;
-        line-height: 30px;
-        font: {
-          size: 20px;
-          weight: 400;
-        }
-      }
-      .images {
-        margin-top: 60px;
-        justify-content: space-between;
-        display: flex;
-      }
-    }
-    .short-img {
-      position: absolute;
-      bottom: 0;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      text-align: center;
-    }
-  }
-
-  .reviews {
-    height: 615px;
-    text-align: center;
-    border-bottom: 1px solid #dbdbdb;
-    .commas {
-      margin-top: 100px;
-    }
-    .main {
-      display: flex;
-      margin: 35px 230px 0;
-      align-items: center;
-      .main-text {
-        margin: 0 auto;
+    .short {
+      height: 900px;
+      position: relative;
+      border-bottom: 1px solid #dbdbdb;
+      .short-content {
+        margin: 100px auto 0;
         width: 730px;
-        color: #585757;
-        line-height: 30px;
-        font: {
-          size: 20px;
-          weight: 400;
-        };
-      }
-      .mat-fab.mat-accent {
-        background-color: #ffffff;
-        color: #969696;
-        box-shadow: 0 0 2px;
-        transition: all ease-in-out 0.3s;
-        &:hover {
-          background-color: #999999;
-          color: #545454;
-        }
-      }
-    }
-    .company {
-      margin-top: 40px;
-      color: #969696;
-      font: {
-        size: 50px;
-      };
-    }
-    .person {
-      margin-top: 30px;
-      color: #1c1c1c;
-      line-height: 26px;
-      font: {
-        size: 20px;
-        weight: 600;
-      };
-    }
-    .position {
-      color: #585757;
-      line-height: 22px;
-      font: {
-        size: 15px;
-        weight: 400;
-      }
-    }
-    .reviews-btn {
-      margin-top: 40px;
-      color: #24afb5;
-      font: {
-        size: 15px;
-        weight: 600;
-      }
-    }
-  }
-
-  .cards {
-    height: 670px;
-    margin: auto;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    position: relative;
-    border-bottom: 1px solid #dbdbdb;
-    .mat-card.card {
-      width: 350px;
-      height: 450px;
-      border: 2px solid #dbdbdb;
-      box-shadow: none;
-      border-radius: 6px;
-      .mat-card-title.card-title {
-        color: #1c1c1c;
-        line-height: 26px;
-        margin-top: 50px;
-        font: {
-          size: 20px;
-          weight: 600;
-        }
-      }
-      .mat-card-content {
-        .price {
+        text-align: center;
+        .short-title {
           color: #1c1c1c;
           line-height: 60px;
-          margin: 0;
-          margin-bottom: 20px;
           font: {
             size: 48px;
             weight: 700;
+          };
+        }
+        .short-description {
+          margin-top: 20px;
+          color: #585757;
+          line-height: 30px;
+          font: {
+            size: 20px;
+            weight: 400;
           }
-          small {
+        }
+        .images {
+          margin-top: 60px;
+          justify-content: space-between;
+          display: flex;
+        }
+      }
+      .short-img {
+        position: absolute;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+    }
+
+    .reviews {
+      height: 615px;
+      text-align: center;
+      border-bottom: 1px solid #dbdbdb;
+      .commas {
+        margin-top: 100px;
+      }
+      .main {
+        display: flex;
+        margin: 35px 230px 0;
+        align-items: center;
+        .main-text {
+          margin: 0 auto;
+          width: 730px;
+          color: #585757;
+          line-height: 30px;
+          font: {
+            size: 20px;
+            weight: 400;
+          };
+        }
+        .mat-fab.mat-accent {
+          background-color: #ffffff;
+          color: #969696;
+          box-shadow: 0 0 2px;
+          transition: all ease-in-out 0.3s;
+          &:hover {
+            background-color: #999999;
+            color: #545454;
+          }
+        }
+      }
+      .company {
+        margin-top: 40px;
+        color: #969696;
+        font: {
+          size: 50px;
+        };
+      }
+      .person {
+        margin-top: 30px;
+        color: #1c1c1c;
+        line-height: 26px;
+        font: {
+          size: 20px;
+          weight: 600;
+        };
+      }
+      .position {
+        color: #585757;
+        line-height: 22px;
+        font: {
+          size: 15px;
+          weight: 400;
+        }
+      }
+      .reviews-btn {
+        margin-top: 40px;
+        color: #24afb5;
+        font: {
+          size: 15px;
+          weight: 600;
+        }
+      }
+    }
+
+    .cards {
+      height: 670px;
+      margin: auto;
+      align-items: center;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      position: relative;
+      border-bottom: 1px solid #dbdbdb;
+      .mat-card.card {
+        width: 350px;
+        height: 450px;
+        border: 2px solid #dbdbdb;
+        box-shadow: none;
+        border-radius: 6px;
+        .mat-card-title.card-title {
+          color: #1c1c1c;
+          line-height: 26px;
+          margin-top: 50px;
+          font: {
+            size: 20px;
+            weight: 600;
+          }
+        }
+        .mat-card-content {
+          .price {
+            color: #1c1c1c;
+            line-height: 60px;
+            margin: 0;
+            margin-bottom: 20px;
+            font: {
+              size: 48px;
+              weight: 700;
+            }
+            small {
+              color: #585757;
+              line-height: 22px;
+              font: {
+                size: 15px;
+                weight: 400;
+              };
+            }
+          }
+          .mat-list-item {
             color: #585757;
-            line-height: 22px;
+            line-height: 30px;
+            margin-top: 10px;
             font: {
               size: 15px;
               weight: 400;
             };
           }
         }
-        .mat-list-item {
+        .mat-card-actions {
+          align-items: center;
+          button {
+            width: 140px;
+            height: 50px;
+            border: 1px solid #dbdbdb;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 2px 1px rgba(0, 0, 0, 0.03), 0 1px 1px rgba(0, 0, 0, 0.04);
+            line-height: 26px;
+            color: #1c1c1c;
+            letter-spacing: 0.2px;
+            font: {
+              size: 20px;
+              weight: 500;
+            };
+            mat-icon {
+              width: 12px;
+              height: 12px;
+              border: 3px solid #969696;
+              border-radius: 6px;
+              margin-left: 15px;
+              margin-bottom: 5px;
+            }
+            &.popular-btn {
+              background-color: #24afb5;
+              color: #ffffff;
+              transition: all ease-in-out 0.4s;
+              &:hover {
+                background-color: #c6f7fa;
+                color: #585757;
+              };
+              mat-icon {
+                border-color: #ffffff;
+              }
+            }
+          }
+        }
+        .mat-card-footer {
+          color: #969696;
+          line-height: 18px;
+          padding: 30px 60px 0;
+          font: {
+            size: 13px;
+            weight: 400;
+          };
+        }
+        &.popular-card {
+          border-color: #24afb5;
+          span.popular-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #24afb5;
+            color: #ffffff;
+            padding: 2px 6px;
+            border-radius: 6px 0 6px 6px;
+          }
+        }
+      }
+    }
+
+    .subscribe {
+      height: 310px;
+      border-bottom: 1px solid #dbdbdb;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      .subscribe-content {
+        .subscribe-content-title {
+          color: #1c1c1c;
+          line-height: 32px;
+          font: {
+            size: 24px;
+            weight: 600;
+          };
+        }
+        .subscribe-content-text {
           color: #585757;
-          line-height: 30px;
-          margin-top: 10px;
+          line-height: 22px;
           font: {
             size: 15px;
             weight: 400;
           };
         }
       }
-      .mat-card-actions {
-        align-items: center;
-        button {
-          width: 140px;
-          height: 50px;
-          border: 1px solid #dbdbdb;
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 2px 1px rgba(0, 0, 0, 0.03), 0 1px 1px rgba(0, 0, 0, 0.04);
+      .form-subscribe {
+        .form-subscribe-input {
+          width: 390px;
+        }
+        .form-subscribe-btn {
+          background-color: #24afb5;
+          color: #ffffff;
           line-height: 26px;
-          color: #1c1c1c;
-          letter-spacing: 0.2px;
+          padding: 11px 16px;
+          margin-left: 20px;
           font: {
             size: 20px;
             weight: 500;
           };
-          mat-icon {
-            width: 12px;
-            height: 12px;
-            border: 3px solid #969696;
-            border-radius: 6px;
-            margin-left: 15px;
-            margin-bottom: 5px;
+          transition: all ease-in-out 0.4s;
+          &:hover {
+            background-color: #c6f7fa;
+            color: #585757;
           }
-          &.popular-btn {
-            background-color: #24afb5;
-            color: #ffffff;
-            transition: all ease-in-out 0.4s;
-            &:hover {
-              background-color: #c6f7fa;
-              color: #585757;
+        }
+        ::ng-deep {
+          .form-subscribe-input.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+            color: #24afb5;
+          }
+          .form-subscribe-input.mat-form-field.mat-focused .mat-form-field-label{
+            color: #24afb5;
+            padding-bottom: 5px;
+          }
+          .form-subscribe-input.mat-form-field-appearance-outline .mat-form-field-infix {
+            padding: 0.5rem 0 1rem 0;
+          }
+        }
+      }
+    }
+
+    .footer {
+      height: 200px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      padding: 70px 0 100px;
+      .footer-logo {
+        width: 50px;
+        height: 50px;
+      }
+      .footer-links-wrapper {
+        position: relative;
+        width: 400px;
+        .footer-links {
+          display: flex;
+          justify-content: space-between;
+          .mat-list-item.menu-item {
+            font: {
+              size: 15px;
+              weight: 600;
             };
-            mat-icon {
-              border-color: #ffffff;
+            a {
+              text-decoration: none;
+              color: #1c1c1c;
+              transition: all ease-in-out 0.2s;
+              &:hover {
+                color: #999999;
+              }
             }
           }
         }
-      }
-      .mat-card-footer {
-        color: #969696;
-        line-height: 18px;
-        padding: 30px 60px 0;
-        font: {
-          size: 13px;
-          weight: 400;
-        };
-      }
-      &.popular-card {
-        border-color: #24afb5;
-        span.popular-box {
+        .copyright {
+          width: 100%;
           position: absolute;
-          top: 0;
-          right: 0;
-          background-color: #24afb5;
-          color: #ffffff;
-          padding: 2px 6px;
-          border-radius: 6px 0 6px 6px;
+          margin: 70px 0;
         }
       }
-    }
-  }
-
-  .subscribe {
-    height: 310px;
-    border-bottom: 1px solid #dbdbdb;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    .subscribe-content {
-      .subscribe-content-title {
-        color: #1c1c1c;
-        line-height: 32px;
-        font: {
-          size: 24px;
-          weight: 600;
-        };
-      }
-      .subscribe-content-text {
-        color: #585757;
-        line-height: 22px;
-        font: {
-          size: 15px;
-          weight: 400;
-        };
-      }
-    }
-    .form-subscribe {
-      .form-subscribe-input {
-        width: 390px;
-      }
-      .form-subscribe-btn {
-        background-color: #24afb5;
-        color: #ffffff;
-        line-height: 26px;
-        padding: 11px 16px;
-        margin-left: 20px;
-        font: {
-          size: 20px;
-          weight: 500;
-        };
-        transition: all ease-in-out 0.4s;
-        &:hover {
-          background-color: #c6f7fa;
-          color: #585757;
+      .footer-social {
+        a {
+          margin-left: 15px;
         }
-      }
-      ::ng-deep {
-        .form-subscribe-input.mat-form-field-appearance-outline .mat-form-field-outline-thick {
-          color: #24afb5;
-        }
-        .form-subscribe-input.mat-form-field.mat-focused .mat-form-field-label{
-          color: #24afb5;
-          padding-bottom: 5px;
-        }
-        .form-subscribe-input.mat-form-field-appearance-outline .mat-form-field-infix {
-          padding: 0.5rem 0 1rem 0;
-        }
-      }
-    }
-  }
-
-  .footer {
-    height: 200px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    padding: 70px 0 100px;
-    .footer-logo {
-      width: 50px;
-      height: 50px;
-    }
-    .footer-links-wrapper {
-      position: relative;
-      width: 400px;
-      .footer-links {
-        display: flex;
-        justify-content: space-between;
-        .mat-list-item.menu-item {
-          font: {
-            size: 15px;
-            weight: 600;
-          };
-          a {
-            text-decoration: none;
-            color: #1c1c1c;
-            transition: all ease-in-out 0.2s;
-            &:hover {
-              color: #999999;
-            }
-          }
-        }
-      }
-      .copyright {
-        width: 100%;
-        position: absolute;
-        margin: 70px 0;
-      }
-    }
-    .footer-social {
-      a {
-        margin-left: 15px;
       }
     }
   }

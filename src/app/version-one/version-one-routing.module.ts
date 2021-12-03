@@ -9,10 +9,9 @@ const routes: Routes = [
   {path: '', component: VersionOneComponent, children: [
       {path: 'first-page', component: FirstPageComponent},
       {path: 'second-page', component: SecondPageComponent},
-
+      {path: '', redirectTo: '/version-1/first-page', pathMatch: 'full'}
     ]
-  },
-  {path: '', redirectTo: '/version-1/first-page', pathMatch: 'full'}
+  }
 ]
 
 @NgModule({
