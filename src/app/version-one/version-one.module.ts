@@ -5,13 +5,15 @@ import { MaterialModule } from '../material.module';
 import { VersionOneComponent } from './version-one.component';
 import { VersionOneRoutingModule } from './version-one-routing.module';
 import { SecondPageComponent } from './components/second-page/second-page.component';
+import { ThirdPageComponent } from './components/third-page/third-page.component';
 
 
 @NgModule({
   declarations: [
     FirstPageComponent,
     VersionOneComponent,
-    SecondPageComponent
+    SecondPageComponent,
+    ThirdPageComponent
   ],
   exports: [
     FirstPageComponent,
