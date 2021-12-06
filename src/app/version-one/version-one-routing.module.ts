@@ -4,11 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { VersionOneComponent } from './version-one.component';
 import { FirstPageComponent } from './components/first-page/first-page.component';
 import { SecondPageComponent } from './components/second-page/second-page.component';
+import { ThirdPageComponent } from './components/third-page/third-page.component';
 
 const routes: Routes = [
   {path: '', component: VersionOneComponent, children: [
       {path: 'first-page', component: FirstPageComponent},
       {path: 'second-page', component: SecondPageComponent},
+      {path: 'third-page', component: ThirdPageComponent},
       {path: '', redirectTo: '/version-1/first-page', pathMatch: 'full'}
     ]
   }

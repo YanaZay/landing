@@ -1,0 +1,118 @@
+:host {
+  .header {
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 30px;
+    ::ng-deep {
+      .mat-toolbar-row, .mat-toolbar-single-row {
+        background-color: #ffffff;
+        width: auto;
+        align-items: center;
+        .mat-list-item.menu-item {
+          margin-right: 30px;
+          font-family: 'Inter', sans-serif;
+          font-weight: 600;
+          color: #1c1c1c;
+          cursor: pointer;
+          transition: all ease-in-out 0.2s;
+          &:hover {
+            color: #999999;
+          }
+          &.active {
+            color: #24afb5;
+          }
+        }
+      }
+    }
+    .header-buttons {
+      display: flex;
+      align-items: center;
+
+      .header-link {
+        color: #24afb5;
+        line-height: 22px;
+        text-decoration: none;
+        margin-right: 26px;
+        font: {
+          size: 15px;
+          weight: 600;
+        };
+      }
+      .header-button {
+        background-color: #24afb5;
+        color: #ffffff;
+        width: 102px;
+        height: 38px;
+        align-items: center;
+        transition: all ease-in-out 0.2s;
+        font: {
+          size: 15px;
+          weight: 500;
+        };
+        &:hover {
+          background-color: #c6f7fa;
+          color: #585757;
+          .mat-icon {
+            border-color: #585757;
+          }
+        };
+        .mat-icon {
+          width: 12px;
+          height: 12px;
+          border: 3px solid #ffffff;
+          border-radius: 6px;
+          margin-left: 15px;
+          margin-bottom: 5px;
+          transition: all ease-in-out 0.2s;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    .welcome-page {
+      height: 700px;
+      .welcome-page-main {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 90px auto;
+
+        &>* {
+          width: 540px;
+        }
+        .welcome-page-content {
+          .welcome-page-title {
+            color: #1c1c1c;
+            line-height: 50px;
+            font: {
+              size: 48px;
+              weight: 700;
+            };
+          }
+          .welcome-page-description {
+            color: #585757;
+            line-height: 30px;
+            font: {
+              size: 20px;
+              weight: 400;
+            };
+          }
+          .welcome-page-button {
+            width: 100px;
+            height: 50px;
+            background-color: #24afb5;
+            color: #ffffff;
+            font: {
+              size: 20px;
+              weight: 500;
+            };
+          }
+        }
+      }
+    }
+  }
+}

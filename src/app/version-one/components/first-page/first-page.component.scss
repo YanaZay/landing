@@ -1,6 +1,5 @@
 :host {
   .header {
-    height: 88px;
     ::ng-deep {
       .mat-toolbar-row, .mat-toolbar-single-row.menu {
         height: 100%;
@@ -14,6 +13,7 @@
           font-family: 'Inter', sans-serif;
           font-weight: 600;
           color: #1c1c1c;
+          cursor: pointer;
           transition: all ease-in-out 0.3s;
           &:hover {
             color: #999999;
