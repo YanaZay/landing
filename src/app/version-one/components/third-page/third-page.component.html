@@ -1,41 +1,64 @@
 <div class="header">
   <mat-toolbar class="menu">
-    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/first-page']"><img src="../../../../assets/img/2_page/logo.png" alt="logo"></mat-list-item>
-    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/first-page']">First Link</mat-list-item>
-    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/second-page']">Second Link</mat-list-item>
-    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/third-page']">Third Link</mat-list-item>
+    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/first-page']">
+      <img src="../../../../assets/img/2_page/logo.png" alt="logo"></mat-list-item>
+    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/first-page']">
+      First Link
+    </mat-list-item>
+    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active"
+                   [routerLink]="['/version-1/second-page']">Second Link
+    </mat-list-item>
+    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/third-page']">
+      Third Link
+    </mat-list-item>
     <mat-list-item role="listitem" class="menu-item">Fourth Link</mat-list-item>
     <mat-list-item role="listitem" class="menu-item">Fifth Link</mat-list-item>
   </mat-toolbar>
   <div class="header-buttons">
     <a class="header-link" href="#">Fifth Link</a>
-    <button mat-stroked-button class="header-button">Button<mat-icon></mat-icon></button>
+    <button mat-stroked-button class="header-button">Button
+      <mat-icon></mat-icon>
+    </button>
   </div>
 </div>
 <div class="main-content">
   <section class="welcome-page">
     <div class="welcome-page-main">
-      <img src="../../../../assets/img/3_page/first.png" alt="image">
+      <img class="welcome-page-img" src="../../../../assets/img/3_page/first.png" alt="image">
       <div class="welcome-page-content">
         <h1 class="welcome-page-title">Two line long header example for web</h1>
-        <p class="welcome-page-description">So you’re trying to surf a site like myspace, hotmail or yahoo mail from work or school and its blocked</p>
+        <p class="welcome-page-description">So you’re trying to surf a site like myspace, hotmail or yahoo mail from
+          work or school and its blocked</p>
         <button mat-stroked-button class="welcome-page-button">Button</button>
       </div>
     </div>
     <div class="welcome-page-footer">
       <div class="footer-title">Partners</div>
       <div class="footer-logotypes">
-        <span>logitech</span>
-        <span>Google</span>
-        <span>facebook</span>
-        <span>Linked<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                         width="24" height="24"
+        <p class="footer-logotypes-logitech">logitech</p>
+        <p class="footer-logotypes-google">Google</p>
+        <p class="footer-logotypes-facebook">facebook</p>
+        <p class="footer-logotypes-linkedin">Linked<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                         width="34" height="34"
                          viewBox="0 0 172 172"
-                         style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#666666"><path d="M156.23893,0h-140.47786c-8.5944,0 -15.76107,7.16667 -15.76107,15.76107v140.47786c0,8.5944 7.16667,15.76107 15.76107,15.76107h140.47786c8.5944,0 15.76107,-7.16667 15.76107,-15.76107v-140.47786c0,-8.5944 -7.16667,-15.76107 -15.76107,-15.76107zM50.16667,143.33333h-28.66667v-78.83333h28.66667zM35.83333,55.17774c-8.5944,0 -14.33333,-5.73893 -14.33333,-12.9056c0,-7.86654 5.73893,-13.60547 14.33333,-13.60547c8.5944,0 14.33333,5.73893 14.33333,12.9056c0,7.86654 -5.73893,13.60547 -14.33333,13.60547zM150.5,143.33333h-28.66667v-43c0,-11.47786 -7.89453,-14.33333 -10.02213,-14.33333c-2.1556,0 -11.47787,1.42774 -11.47787,14.33333c0,1.42774 0,43 0,43h-28.66667v-78.83333h28.66667v11.47787c4.3112,-6.4668 11.47787,-11.47787 25.08333,-11.47787c13.60547,0 25.08333,10.75 25.08333,35.83333z"></path></g></g></svg></span>
-        <span>PHILIPS</span>
+                         style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                                   stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                                   stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                                   font-size="none" style="mix-blend-mode: normal"><path
+          d="M0,172v-172h172v172z" fill="none"></path><g fill="#666666"><path
+          d="M156.23893,0h-140.47786c-8.5944,0 -15.76107,7.16667 -15.76107,15.76107v140.47786c0,8.5944 7.16667,15.76107 15.76107,15.76107h140.47786c8.5944,0 15.76107,-7.16667 15.76107,-15.76107v-140.47786c0,-8.5944 -7.16667,-15.76107 -15.76107,-15.76107zM50.16667,143.33333h-28.66667v-78.83333h28.66667zM35.83333,55.17774c-8.5944,0 -14.33333,-5.73893 -14.33333,-12.9056c0,-7.86654 5.73893,-13.60547 14.33333,-13.60547c8.5944,0 14.33333,5.73893 14.33333,12.9056c0,7.86654 -5.73893,13.60547 -14.33333,13.60547zM150.5,143.33333h-28.66667v-43c0,-11.47786 -7.89453,-14.33333 -10.02213,-14.33333c-2.1556,0 -11.47787,1.42774 -11.47787,14.33333c0,1.42774 0,43 0,43h-28.66667v-78.83333h28.66667v11.47787c4.3112,-6.4668 11.47787,-11.47787 25.08333,-11.47787c13.60547,0 25.08333,10.75 25.08333,35.83333z"></path></g></g></svg></p>
+        <p class="footer-logotypes-philips">PHILIPS</p>
       </div>
     </div>
   </section>
 
-
+  <section class="notebook">
+    <div class="notebook-description">
+      <div class="description-forehead">caps heading</div>
+      <div class="description-title">Two line long header example for web</div>
+      <div class="description-text">You will likely be required to install the fixed mounts. These are what will keep the apparatus stable and secure with your computer monitor in it. Follow directions carefully so that you can be sure to get everything.</div>
+      <a class="description-links" href="#">Learn more</a>
+    </div>
+    <img src="../../../../assets/img/3_page/half-notebook.png" alt="half notebook">
+  </section>
 </div>

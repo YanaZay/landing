@@ -74,15 +74,15 @@
 
   .main-content {
     .welcome-page {
-      height: 700px;
+      height: calc(100vh - 133px);
+      border-bottom: 1px solid #dbdbdb;
       .welcome-page-main {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         margin: 90px auto;
-
         &>* {
-          width: 540px;
+          width: 40vw;
         }
         .welcome-page-content {
           .welcome-page-title {
@@ -111,6 +111,85 @@
               weight: 500;
             };
           }
+        }
+      }
+      .welcome-page-footer {
+        color: #666666;
+        margin: 0 145px;
+        .footer-title {
+          text-transform: uppercase;
+          color: #969696;
+          font: {
+            size: 13px;
+            weight: 400;
+          };
+        }
+        .footer-logotypes {
+          justify-content: space-between;
+          display: flex;
+          align-items: center;
+          font: {
+            size: 34px;
+            weight: 700;
+          };
+          .footer-logotypes-linkedin {
+            display: flex;
+            align-items: center;
+            svg {g {transition: all ease-in-out 0.2s;}}
+          }
+          p {
+            transition: all ease-in-out 0.2s;
+          }
+          &>*:hover {
+            color: #24afb5;
+            svg {g {fill: #24afb5}}
+          }
+        }
+      }
+    }
+
+    .notebook {
+      height: auto;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      .notebook-description {
+        padding: 80px 140px;
+        .description-forehead {
+          text-transform: uppercase;
+          color: #1c1c1c;
+          line-height: 14px;
+          font: {
+            size: 13px;
+            weight: 700;
+          };
+        }
+        .description-title {
+          margin: 20px 0;
+          color: #1c1c1c;
+          line-height: 60px;
+          font: {
+            size: 48px;
+            weight: 700;
+          };
+        }
+        .description-text {
+          margin-bottom: 20px ;
+          color: #585757;
+          line-height: 30px;
+          font: {
+            size: 20px;
+            weight: 400;
+          };
+        }
+        .description-links {
+          text-decoration: none;
+          color: #24afb5;
+          line-height: 26px;
+          font: {
+            size: 20px;
+            weight: 600;
+          };
         }
       }
     }

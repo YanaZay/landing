@@ -30,18 +30,17 @@
   }
   .main-content {
     .log-page {
-      height: 92vh;
+      height: calc(100vh - 133px);
       display: flex;
       position: relative;
       border-bottom: 1px solid #dbdbdb;
       .log-part {
-        width: 50%;
-        display: flex;
-        margin-top: 10rem;
-        margin-left: 15rem;
+        height: 30vh;
+        align-items: center;
+        padding-left: 5rem;
+        padding-top: 5rem;
         .mat-card.log-card {
           width: 445px;
-          height: 30rem;
           box-shadow: none;
           .mat-card-title {
             line-height: 60px;
@@ -179,21 +178,18 @@
       height: 480px;
       border-bottom: 1px solid #dbdbdb;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
       align-items: center;
-      &>* {
-        width: 28%;
-      }
       .circle {
         #chart {
           width: 340px;
           height: 300px;
         }
       }
-
       .points-list {
         display: flex;
         flex-wrap: wrap;
+        width: 30vw;
         .point-item {
           display: flex;
           margin-right: 100px;
@@ -225,6 +221,7 @@
         }
       }
       .description {
+        width: 30vw;
         color: #585757;
         line-height: 22px;
         font: {
@@ -453,8 +450,8 @@
           border-color: #24afb5;
           span.popular-box {
             position: absolute;
-            top: 0;
-            right: 0;
+            top: -1px;
+            right: -1px;
             background-color: #24afb5;
             color: #ffffff;
             padding: 2px 6px;

@@ -19,10 +19,6 @@ export class FirstPageComponent implements OnInit {
   public viewCharts(): void {
     let root = am5.Root.new("chart");
 
-    root.setThemes([
-      am5themes_Micro.new(root)
-    ]);
-
     let chart = root.container.children.push(am5percent.PieChart.new(root, {
       layout: root.verticalLayout,
       innerRadius: am5.percent(50), // отвечает за внутреннее отверстие
@@ -31,7 +27,7 @@ export class FirstPageComponent implements OnInit {
     let series = chart.series.push(am5percent.PieSeries.new(root, {
       valueField: "value",
       categoryField: "category",
-      alignLabels: true,
+      alignLabels: false,
     }));
 
     series.labels.template.setAll({
@@ -39,6 +35,12 @@ export class FirstPageComponent implements OnInit {
       centerX: 0,
       centerY: 0,
     });
+    series.get('colors')!.set('colors', [
+    am5.color('#24afb5'),
+    am5.color('#d3eff0'),
+    am5.color('#dbdbdb'),
+    am5.color('#f7f7f7'),
+    ]);
 
     series.data.setAll([
       { value: 28, category: "Downloads" },
@@ -48,13 +50,5 @@ export class FirstPageComponent implements OnInit {
     ]);
 
     series.appear(1000, 100);
-
-    // root.setThemes.rule("ColorSet").set('colors', [
-    //   am5.color('#24afb5'),
-    //   am5.color('#d3eff0'),
-    //   am5.color('#dbdbdb'),
-    //   am5.color('#f7f7f7')
-    // ])
   }
-
 }
