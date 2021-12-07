@@ -153,6 +153,7 @@
       display: flex;
       align-items: center;
       text-align: center;
+      border-bottom: 1px solid #dbdbdb;
       .notebook-description {
         padding: 80px 140px;
         .description-forehead {
@@ -190,6 +191,65 @@
             size: 20px;
             weight: 600;
           };
+        }
+      }
+    }
+
+    .subscribe {
+      padding: 110px 145px 115px;
+      border-bottom: 1px solid #dbdbdb;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      .subscribe-content {
+        .subscribe-content-title {
+          color: #1c1c1c;
+          line-height: 32px;
+          font: {
+            size: 24px;
+            weight: 600;
+          };
+        }
+        .subscribe-content-text {
+          color: #585757;
+          line-height: 22px;
+          font: {
+            size: 15px;
+            weight: 400;
+          };
+        }
+      }
+      .form-subscribe {
+        .form-subscribe-input {
+          width: 390px;
+        }
+        .form-subscribe-btn {
+          background-color: #24afb5;
+          color: #ffffff;
+          line-height: 26px;
+          padding: 11px 16px;
+          margin-left: 20px;
+          font: {
+            size: 20px;
+            weight: 500;
+          };
+          transition: all ease-in-out 0.4s;
+          &:hover {
+            background-color: #c6f7fa;
+            color: #585757;
+          }
+        }
+        ::ng-deep {
+          .form-subscribe-input.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+            color: #24afb5;
+          }
+          .form-subscribe-input.mat-form-field.mat-focused .mat-form-field-label{
+            color: #24afb5;
+            padding-bottom: 5px;
+          }
+          .form-subscribe-input.mat-form-field-appearance-outline .mat-form-field-infix {
+            padding: 0.5rem 0 1rem 0;
+          }
         }
       }
     }
