@@ -412,7 +412,7 @@
     padding: 90px 145px;
     border-bottom: 1px solid #dbdbdb;
     .sections-title {
-      margin-left: 30px;
+      margin-left: 2rem;
       display: flex;
       align-items: center;
       color: #1c1c1c;
@@ -421,6 +421,9 @@
         size: 25px;
         weight: 600;
       };
+      h2 {
+        margin-left: 1rem;
+      }
     }
     .section-container {
       margin-top: 50px;
@@ -454,8 +457,10 @@
             color: #585757;
             cursor: pointer;
             transition: all ease-in-out 0.2s;
+            svg {g {transition: all ease-in-out 0.2s;}}
             &:hover {
               color: #24afb5;
+              svg {g {fill: #24afb5}}
             }
           }
         }

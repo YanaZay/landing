@@ -37,8 +37,8 @@
       .log-part {
         height: 30vh;
         align-items: center;
-        padding-left: 5rem;
-        padding-top: 5rem;
+        padding-left: 10vw;
+        padding-top: 10vh;
         .mat-card.log-card {
           width: 445px;
           box-shadow: none;
@@ -189,6 +189,7 @@
       .points-list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         width: 30vw;
         .point-item {
           display: flex;
@@ -562,6 +563,10 @@
       .footer-social {
         a {
           margin-left: 15px;
+          svg {g {transition: all ease-in-out 0.2s;}}
+          &:hover {
+            svg {g {fill: #24afb5}}
+          }
         }
       }
     }
