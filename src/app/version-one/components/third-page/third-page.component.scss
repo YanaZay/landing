@@ -64,7 +64,7 @@
           height: 12px;
           border: 3px solid #ffffff;
           border-radius: 6px;
-          margin-left: 15px;
+          margin-left: 0.5rem;
           margin-bottom: 5px;
           transition: all ease-in-out 0.2s;
         }
@@ -197,10 +197,10 @@
 
     .subscribe {
       padding: 110px 145px 115px;
-      border-bottom: 1px solid #dbdbdb;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+      border-bottom: 1px solid #dbdbdb;
       .subscribe-content {
         .subscribe-content-title {
           color: #1c1c1c;
@@ -250,6 +250,78 @@
           .form-subscribe-input.mat-form-field-appearance-outline .mat-form-field-infix {
             padding: 0.5rem 0 1rem 0;
           }
+        }
+      }
+    }
+
+    .devices {
+      height: 740px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      border-bottom: 1px solid #dbdbdb;
+      .devices-content {
+        width: 50vw;
+        padding-left: 15vw;
+        .devices-content-title {
+          margin: 30px 0;
+          color: #1c1c1c;
+          line-height: 60px;
+          font: {
+            size: 48px;
+            weight: 700;
+          };
+        }
+        .devices-content-text {
+          color: #585757;
+          line-height: 30px;
+          font: {
+            size: 20px;
+          };
+        }
+        .devices-content-buttons {
+          margin: 40px 0 20px;
+          .apple-btn {
+            margin-right: 1rem;
+          }
+          &>* {
+            transition: all ease-in-out 0.2s;
+          }
+          &>*:hover {
+            opacity: 0.5;
+            cursor: pointer;
+          }
+        }
+        .devices-content-footer {
+          color: #969696;
+          line-height: 18px;
+          font: {
+            size: 13px;
+          };
+        }
+      }
+      .devices-img {
+        position: absolute;
+        bottom: 0;
+        right: 15vw;
+      }
+    }
+
+    .slider {
+      text-align: center;
+      padding: 110px 0;
+      .product-item {
+        .product-item-content {
+          border: 1px solid var(--surface-d);
+          border-radius: 3px;
+          margin: .3rem;
+          text-align: center;
+          padding: 2rem 0;
+        }
+
+        .product-image {
+          width: 50%;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
         }
       }
     }

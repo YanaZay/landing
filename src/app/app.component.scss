@@ -8,6 +8,9 @@
     .versions {
       margin-left: 1rem;
       color: #ffffff;
+      .active {
+        background-color: #969696;
+      }
     }
   }
 }

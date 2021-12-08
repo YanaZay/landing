@@ -6,6 +6,9 @@ import { VersionOneComponent } from './version-one.component';
 import { VersionOneRoutingModule } from './version-one-routing.module';
 import { SecondPageComponent } from './components/second-page/second-page.component';
 import { ThirdPageComponent } from './components/third-page/third-page.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselModule } from 'primeng/carousel';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { ThirdPageComponent } from './components/third-page/third-page.component
   imports: [
     CommonModule,
     MaterialModule,
-    VersionOneRoutingModule
+    VersionOneRoutingModule,
+    IvyCarouselModule,
+    NgbModule,
+    CarouselModule
   ]
 })
 export class VersionOneModule { }
