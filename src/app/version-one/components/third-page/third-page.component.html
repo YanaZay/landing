@@ -16,9 +16,7 @@
   </mat-toolbar>
   <div class="header-buttons">
     <a class="header-link" href="#">Fifth Link</a>
-    <button mat-stroked-button class="header-button">Button
-      <mat-icon></mat-icon>
-    </button>
+    <button mat-stroked-button class="header-button">Button<mat-icon></mat-icon></button>
   </div>
 </div>
 <div class="main-content">
@@ -96,7 +94,7 @@
       <ng-template pTemplate="header">
         <h5>Circular, AutoPlay, 3 Items per Page and Scroll by 1</h5>
       </ng-template>
-      <ng-template pTemplate="item" [breakpoint]="1024px">
+      <ng-template pTemplate="item">
         <mat-card class="slider-item">-->
           <img src="../../../../assets/img/3_page/ball-star.png" alt="">
           <mat-card-content>
@@ -176,5 +174,9 @@
     </p-carousel>
   </section>
 
+  <section class="section-with-button">
+    <p class="section-with-button-title">Two line header example<br> with text description</p>
+    <button mat-stroked-button class="section-with-button-title-btn">Button<mat-icon></mat-icon></button>
+  </section>
 
 </div>
