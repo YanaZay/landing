@@ -1,266 +1,268 @@
-<div class="header">
-  <mat-toolbar class="menu">
-    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/first-page']">First Link</mat-list-item>
-    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/second-page']">Second Link</mat-list-item>
-    <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/third-page']">Third Link</mat-list-item>
-    <a class="menu-img" routerLink='/version-1/first-page'><img src="../../../../assets/img/1_page/logo.png" alt="logo"></a>
-    <mat-list-item role="listitem" class="menu-item">Fourth Link</mat-list-item>
-    <mat-list-item role="listitem" class="menu-item">Fifth Link</mat-list-item>
-    <mat-list-item role="listitem" class="menu-item">Sixth Link</mat-list-item>
-  </mat-toolbar>
-</div>
-<div class="main-content">
-  <section class="log-page">
-    <div class="log-part">
-      <mat-card class="log-card">
-        <mat-card-title>Heading</mat-card-title>
-        <mat-card-subtitle>Let’s talk a little about what symptoms a slow computer can have.</mat-card-subtitle>
+<div class="page-wrapper">
+  <div class="header">
+    <mat-toolbar class="menu">
+      <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/first-page']">First Link</mat-list-item>
+      <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/second-page']">Second Link</mat-list-item>
+      <mat-list-item role="listitem" class="menu-item" routerLinkActive="active" [routerLink]="['/version-1/third-page']">Third Link</mat-list-item>
+      <a class="menu-img" routerLink='/version-1/first-page'><img src="../../../../assets/img/1_page/logo.png" alt="logo"></a>
+      <mat-list-item role="listitem" class="menu-item">Fourth Link</mat-list-item>
+      <mat-list-item role="listitem" class="menu-item">Fifth Link</mat-list-item>
+      <mat-list-item role="listitem" class="menu-item">Sixth Link</mat-list-item>
+    </mat-toolbar>
+  </div>
+  <div class="main-content">
+    <section class="log-page">
+      <div class="log-part">
+        <mat-card class="log-card">
+          <mat-card-title>Heading</mat-card-title>
+          <mat-card-subtitle>Let’s talk a little about what symptoms a slow computer can have.</mat-card-subtitle>
+          <mat-card-actions>
+            <mat-form-field appearance="outline">
+              <mat-label>Name</mat-label>
+              <input matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input matInput>
+            </mat-form-field>
+
+            <button mat-stroked-button class="subscribe-button">Subscribe</button>
+          </mat-card-actions>
+
+          <mat-card-footer>No spam, notifications only about new products, updates and freebies.</mat-card-footer>
+        </mat-card>
+      </div>
+      <img src="../../../../assets/img/1_page/log-img.png" alt="log-img">
+    </section>
+
+    <section class="section-star">
+      <img src="../../../../assets/img/1_page/ball-star.png" alt="ball with star" class="star-ball">
+      <div class="star-text">
+        Over 92% of computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility and even when it is it almost always leaves broken Windows Registry keys behind it. Even if you have an anti-spyware tool your Windows Registry might be broken.
+      </div>
+    </section>
+
+    <section class="section-one-line">
+      <mat-list role="list" class="one-list">
+        <mat-list-item role="listitem">
+          <div class="one-list-title">
+            <img src="../../../../assets/img/1_page/small-ball-star.png" alt="small ball with star">One line header
+          </div>
+          <div class="one-list-text">
+            Computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility.
+          </div>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <div class="one-list-title">
+            <img src="../../../../assets/img/1_page/small-ball-star.png" alt="small ball with star">One line header
+          </div>
+          <div class="one-list-text">
+            Computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility.
+          </div>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <div class="one-list-title">
+            <img src="../../../../assets/img/1_page/small-ball-star.png" alt="small ball with star">One line header
+          </div>
+          <div class="one-list-text">
+            Computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility.
+          </div>
+        </mat-list-item>
+      </mat-list>
+
+      <img src="../../../../assets/img/1_page/abstract-img.jpg" alt="abstract" class="one-list-img">
+    </section>
+
+    <section class="circle-statistic">
+      <div class="circle">
+        <div id="chart"></div>
+      </div>
+      <div class="points-list">
+        <div class="point-item">
+          <div class="point one"></div>
+          <div class="percent">
+            <p class="percent-number">28%</p>
+            <p class="percent-name">Downloads</p>
+          </div>
+        </div>
+        <div class="point-item">
+          <div class="point two"></div>
+          <div class="percent">
+            <p class="percent-number">22%</p>
+            <p class="percent-name">Users</p>
+          </div>
+        </div>
+        <div class="point-item">
+          <div class="point tree"></div>
+          <div class="percent">
+            <p class="percent-number">37%</p>
+            <p class="percent-name">Subscribers</p>
+          </div>
+        </div>
+        <div class="point-item">
+          <div class="point four"></div>
+          <div class="percent">
+            <p class="percent-number">13%</p>
+            <p class="percent-name">Products</p>
+          </div>
+        </div>
+      </div>
+      <div class="description">
+        The quality of today’s video game was not at all there when video game first conceptualized and played ever. During the formulative years, video games were created by using various interactive electronic devices with various display.
+        <p class="note">
+          Video games were created by using various interactive electronic devices with various display.
+        </p>
+      </div>
+    </section>
+
+    <section class="short">
+      <div class="short-content">
+        <div class="short-title">Short heading</div>
+        <div class="short-description">Each and every one of us has that moment when we are suddenly stunned when we come face to face with the enormity of the universe.</div>
+        <div class="images">
+          <div class="images-item">
+            <img src="../../../../assets/img/1_page/ball-star.png" alt="star in ball">
+            <p>Feature One</p>
+          </div>
+          <div class="images-item">
+            <img src="../../../../assets/img/1_page/ball-star.png" alt="star in ball">
+            <p>Feature Two</p>
+          </div>
+          <div class="images-item">
+            <img src="../../../../assets/img/1_page/ball-star.png" alt="star in ball">
+            <p>Feature Three</p>
+          </div>
+          <div class="images-item">
+            <img src="../../../../assets/img/1_page/ball-star.png" alt="star in ball">
+            <p>Feature Four</p>
+          </div>
+        </div>
+      </div>
+      <img src="../../../../assets/img/1_page/screen.png" alt="image with screen" class="short-img">
+    </section>
+
+    <section class="reviews">
+      <div class="commas"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                               width="30" height="30"
+                               viewBox="0 0 172 172"
+                               style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#666666"><path d="M28.66667,22.93333c-6.33533,0 -11.46667,5.13133 -11.46667,11.46667v45.86667c0,6.33533 5.13133,11.46667 11.46667,11.46667h23.16849c0.14294,10.24102 -0.85884,32.18473 -10.7724,48.46458c0.00361,0.00056 0.00758,-0.00055 0.0112,0c-1.50994,2.32815 -1.13663,5.40334 0.88649,7.3026c2.02312,1.89926 5.11574,2.07779 7.34398,0.42396c0,0 25.22891,-19.243 25.22891,-56.19114v-57.33333c0,-6.33533 -5.13133,-11.46667 -11.46667,-11.46667zM108.93333,22.93333c-6.33533,0 -11.46667,5.13133 -11.46667,11.46667v45.86667c0,6.33533 5.13133,11.46667 11.46667,11.46667h23.16849c0.14294,10.24102 -0.85885,32.18473 -10.7724,48.46458h0.0112c-1.50995,2.32815 -1.13664,5.40335 0.88648,7.3026c2.02312,1.89926 5.11575,2.07779 7.34399,0.42396c0,0 25.22891,-19.243 25.22891,-56.19114v-57.33333c0,-6.33533 -5.13133,-11.46667 -11.46667,-11.46667z"></path></g></g></svg></div>
+
+      <div class="main">
+        <button mat-fab aria-label="Example icon button with a delete icon">
+          <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
+        <p class="main-text">
+          There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun. The truth is the universe is a constantly changing, moving, some would say “living” thing because you just never know what you are going to see on any given night of stargazing.
+        </p>
+        <button mat-fab aria-label="Example icon button with a delete icon">
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+      </div>
+
+      <div class="company">Google</div>
+      <div class="person">Charlie Mendoza</div>
+      <div class="position">Product Designer</div>
+      <button mat-button class="reviews-btn">Learn more</button>
+    </section>
+
+    <section class="cards">
+      <mat-card class="card">
+        <mat-card-title class="card-title">Start</mat-card-title>
+        <mat-card-content>
+          <h1 class="price">Free</h1>
+          <mat-list-item role="listitem">Long Feature One</mat-list-item>
+          <mat-list-item role="listitem">Feature Two</mat-list-item>
+          <mat-list-item role="listitem">Long Feature Three</mat-list-item>
+        </mat-card-content>
         <mat-card-actions>
-          <mat-form-field appearance="outline">
-            <mat-label>Name</mat-label>
-            <input matInput>
-          </mat-form-field>
-
-          <mat-form-field appearance="outline">
-            <mat-label>Email</mat-label>
-            <input matInput>
-          </mat-form-field>
-
-          <button mat-stroked-button class="subscribe-button">Subscribe</button>
+          <button mat-stroked-button>Button<mat-icon></mat-icon></button>
         </mat-card-actions>
-
-        <mat-card-footer>No spam, notifications only about new products, updates and freebies.</mat-card-footer>
+        <mat-card-footer>
+          Two line long feature example with text description for your project
+        </mat-card-footer>
       </mat-card>
-    </div>
-    <img src="../../../../assets/img/1_page/log-img.png" alt="log-img">
-  </section>
 
-  <section class="section-star">
-    <img src="../../../../assets/img/1_page/ball-star.png" alt="ball with star" class="star-ball">
-    <div class="star-text">
-      Over 92% of computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility and even when it is it almost always leaves broken Windows Registry keys behind it. Even if you have an anti-spyware tool your Windows Registry might be broken.
-    </div>
-  </section>
+      <mat-card class="card popular-card">
+        <span class="popular-box">Popular</span>
+        <mat-card-title class="card-title">Pro</mat-card-title>
+        <mat-card-content>
+          <h1 class="price">$38<small>/ mo</small></h1>
+          <mat-list-item role="listitem">Long Feature One</mat-list-item>
+          <mat-list-item role="listitem">Feature Two</mat-list-item>
+          <mat-list-item role="listitem">Long Feature Three</mat-list-item>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-stroked-button class="popular-btn">Button<mat-icon></mat-icon></button>
+        </mat-card-actions>
+        <mat-card-footer>
+          Two line long feature example with text description for your project
+        </mat-card-footer>
+      </mat-card>
 
-  <section class="section-one-line">
-    <mat-list role="list" class="one-list">
-      <mat-list-item role="listitem">
-        <div class="one-list-title">
-          <img src="../../../../assets/img/1_page/small-ball-star.png" alt="small ball with star">One line header
-        </div>
-        <div class="one-list-text">
-          Computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility.
-        </div>
-      </mat-list-item>
-      <mat-list-item role="listitem">
-        <div class="one-list-title">
-          <img src="../../../../assets/img/1_page/small-ball-star.png" alt="small ball with star">One line header
-        </div>
-        <div class="one-list-text">
-          Computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility.
-        </div>
-      </mat-list-item>
-      <mat-list-item role="listitem">
-        <div class="one-list-title">
-          <img src="../../../../assets/img/1_page/small-ball-star.png" alt="small ball with star">One line header
-        </div>
-        <div class="one-list-text">
-          Computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility.
-        </div>
-      </mat-list-item>
-    </mat-list>
+      <mat-card class="card">
+        <mat-card-title class="card-title">Business</mat-card-title>
+        <mat-card-content>
+          <h1 class="price">$78<small>/ mo</small></h1>
+          <mat-list-item role="listitem">Long Feature One</mat-list-item>
+          <mat-list-item role="listitem">Feature Two</mat-list-item>
+          <mat-list-item role="listitem">Long Feature Three</mat-list-item>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-stroked-button>Button<mat-icon></mat-icon></button>
+        </mat-card-actions>
+        <mat-card-footer>
+          Two line long feature example with text description for your project
+        </mat-card-footer>
+      </mat-card>
+    </section>
 
-    <img src="../../../../assets/img/1_page/abstract-img.jpg" alt="abstract" class="one-list-img">
-  </section>
-
-  <section class="circle-statistic">
-    <div class="circle">
-      <div id="chart"></div>
-    </div>
-    <div class="points-list">
-      <div class="point-item">
-        <div class="point one"></div>
-        <div class="percent">
-          <p class="percent-number">28%</p>
-          <p class="percent-name">Downloads</p>
-        </div>
+    <section class="subscribe">
+      <div class="subscribe-content">
+        <h1 class="subscribe-content-title">Heading</h1>
+        <div class="subscribe-content-text">In the history of modern astronomy, there is probably no one<br>
+          greater leap forward than the building and launch.</div>
       </div>
-      <div class="point-item">
-        <div class="point two"></div>
-        <div class="percent">
-          <p class="percent-number">22%</p>
-          <p class="percent-name">Users</p>
+      <form class="form-subscribe">
+        <mat-form-field appearance="outline" class="form-subscribe-input">
+          <mat-label>Email</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <button mat-stroked-button class="form-subscribe-btn">Subscribe</button>
+      </form>
+    </section>
+
+    <section class="footer">
+      <img src="../../../../assets/img/1_page/logo.png" alt="logo" class="footer-logo">
+      <div class="footer-links-wrapper">
+        <div class="footer-links">
+          <mat-list-item role="listitem" class="menu-item"><a href="#">First Link</a></mat-list-item>
+          <mat-list-item role="listitem" class="menu-item"><a href="#">Second Link</a></mat-list-item>
+          <mat-list-item role="listitem" class="menu-item"><a href="#">Third Link</a></mat-list-item>
+          <mat-list-item role="listitem" class="menu-item"><a href="#">Fourth Link</a></mat-list-item>
+          <mat-list-item role="listitem" class="menu-item"><a href="#">Fifth Link</a></mat-list-item>
         </div>
+        <div class="copyright">© Copyright 2020 Pixsellz - Premium UI Goods for Designers</div>
       </div>
-      <div class="point-item">
-        <div class="point tree"></div>
-        <div class="percent">
-          <p class="percent-number">37%</p>
-          <p class="percent-name">Subscribers</p>
-        </div>
+
+      <div class="footer-social">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                         width="25" height="25"
+                         viewBox="0 0 172 172"
+                         style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#95a5a6"><path d="M121.83333,21.5h-71.66667c-15.83117,0 -28.66667,12.8355 -28.66667,28.66667v71.66667c0,15.83117 12.8355,28.66667 28.66667,28.66667h40.28383v-49.88717h-16.7915v-19.52917h16.7915v-14.36917c0,-16.65533 10.18383,-25.7355 25.0475,-25.7355c5.0095,-0.01433 10.01183,0.24367 14.99267,0.7525v17.415h-10.234c-8.09833,0 -9.675,3.827 -9.675,9.47433v12.43417h19.35l-2.5155,19.52917h-16.94917v49.91583h11.36633c15.83117,0 28.66667,-12.8355 28.66667,-28.66667v-71.66667c0,-15.83117 -12.8355,-28.66667 -28.66667,-28.66667z"></path></g></g></svg></a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                         width="25" height="25"
+                         viewBox="0 0 172 172"
+                         style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#95a5a6"><path d="M57.33333,21.5c-19.78717,0 -35.83333,16.04617 -35.83333,35.83333v57.33333c0,19.78717 16.04617,35.83333 35.83333,35.83333h57.33333c19.78717,0 35.83333,-16.04617 35.83333,-35.83333v-57.33333c0,-19.78717 -16.04617,-35.83333 -35.83333,-35.83333zM129,35.83333c3.956,0 7.16667,3.21067 7.16667,7.16667c0,3.956 -3.21067,7.16667 -7.16667,7.16667c-3.956,0 -7.16667,-3.21067 -7.16667,-7.16667c0,-3.956 3.21067,-7.16667 7.16667,-7.16667zM86,50.16667c19.78717,0 35.83333,16.04617 35.83333,35.83333c0,19.78717 -16.04617,35.83333 -35.83333,35.83333c-19.78717,0 -35.83333,-16.04617 -35.83333,-35.83333c0,-19.78717 16.04617,-35.83333 35.83333,-35.83333zM86,64.5c-11.87412,0 -21.5,9.62588 -21.5,21.5c0,11.87412 9.62588,21.5 21.5,21.5c11.87412,0 21.5,-9.62588 21.5,-21.5c0,-11.87412 -9.62588,-21.5 -21.5,-21.5z"></path></g></g></svg></a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                         width="25" height="25"
+                         viewBox="0 0 172 172"
+                         style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#95a5a6"><path d="M160.53333,39.77213c-5.4868,2.43667 -11.38067,4.0764 -17.56693,4.816c6.31813,-3.784 11.1628,-9.77533 13.44467,-16.91907c-5.90533,3.50307 -12.4528,6.04867 -19.42453,7.42467c-5.57853,-5.94547 -13.52493,-9.66067 -22.31987,-9.66067c-16.8904,0 -30.5816,13.69693 -30.5816,30.5816c0,2.39653 0.2752,4.73573 0.7912,6.966c-25.41587,-1.2728 -47.94787,-13.4504 -63.038,-31.9576c-2.62587,4.51787 -4.13373,9.7696 -4.13373,15.38253c0,10.60667 5.39507,19.9692 13.59947,25.45027c-5.01093,-0.16053 -9.72947,-1.53653 -13.85173,-3.82413c0,0.13187 0,0.25227 0,0.38413c0,14.82067 10.53787,27.18173 24.53293,29.98533c-2.5628,0.69947 -5.26893,1.07213 -8.06107,1.07213c-1.96653,0 -3.8872,-0.19493 -5.75053,-0.54467c3.89293,12.14893 15.1876,20.99547 28.5692,21.242c-10.46333,8.2044 -23.65,13.09493 -37.98333,13.09493c-2.46533,0 -4.902,-0.14333 -7.29853,-0.43c13.5364,8.67453 29.60693,13.73707 46.88147,13.73707c56.25547,0 87.00907,-46.60053 87.00907,-87.0148c0,-1.3244 -0.02867,-2.64307 -0.086,-3.956c5.97987,-4.3172 11.16853,-9.7008 15.26787,-15.82973z"></path></g></g></svg></a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                         width="25" height="25"
+                         viewBox="0 0 172 172"
+                         style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#95a5a6"><path d="M154.671,44.333c-1.64833,-6.16333 -6.50733,-11.02233 -12.67067,-12.67067c-11.18,-2.99567 -56.00033,-2.99567 -56.00033,-2.99567c0,0 -44.82033,0 -56.00033,2.99567c-6.16333,1.64833 -11.02233,6.50733 -12.67067,12.67067c-2.99567,11.18 -2.99567,41.667 -2.99567,41.667c0,0 0,30.487 2.99567,41.667c1.64833,6.16333 6.50733,11.02233 12.67067,12.67067c11.18,2.99567 56.00033,2.99567 56.00033,2.99567c0,0 44.82033,0 56.00033,-2.99567c6.1705,-1.64833 11.02233,-6.50733 12.67067,-12.67067c2.99567,-11.18 2.99567,-41.667 2.99567,-41.667c0,0 0,-30.487 -2.99567,-41.667zM71.66667,104.619v-37.238c0,-2.75917 2.9885,-4.47917 5.375,-3.10317l32.25,18.619c2.3865,1.376 2.3865,4.83033 0,6.20633l-32.25,18.619c-2.3865,1.38317 -5.375,-0.344 -5.375,-3.10317z"></path></g></g></svg></a>
       </div>
-      <div class="point-item">
-        <div class="point four"></div>
-        <div class="percent">
-          <p class="percent-number">13%</p>
-          <p class="percent-name">Products</p>
-        </div>
-      </div>
-    </div>
-    <div class="description">
-      The quality of today’s video game was not at all there when video game first conceptualized and played ever. During the formulative years, video games were created by using various interactive electronic devices with various display.
-      <p class="note">
-        Video games were created by using various interactive electronic devices with various display.
-      </p>
-    </div>
-  </section>
-
-  <section class="short">
-    <div class="short-content">
-      <div class="short-title">Short heading</div>
-      <div class="short-description">Each and every one of us has that moment when we are suddenly stunned when we come face to face with the enormity of the universe.</div>
-      <div class="images">
-        <div class="images-item">
-          <img src="../../../../assets/img/1_page/ball-star.png" alt="star in ball">
-          <p>Feature One</p>
-        </div>
-        <div class="images-item">
-          <img src="../../../../assets/img/1_page/ball-star.png" alt="star in ball">
-          <p>Feature Two</p>
-        </div>
-        <div class="images-item">
-          <img src="../../../../assets/img/1_page/ball-star.png" alt="star in ball">
-          <p>Feature Three</p>
-        </div>
-        <div class="images-item">
-          <img src="../../../../assets/img/1_page/ball-star.png" alt="star in ball">
-          <p>Feature Four</p>
-        </div>
-      </div>
-    </div>
-    <img src="../../../../assets/img/1_page/screen.png" alt="image with screen" class="short-img">
-  </section>
-
-  <section class="reviews">
-    <div class="commas"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                             width="30" height="30"
-                             viewBox="0 0 172 172"
-                             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#666666"><path d="M28.66667,22.93333c-6.33533,0 -11.46667,5.13133 -11.46667,11.46667v45.86667c0,6.33533 5.13133,11.46667 11.46667,11.46667h23.16849c0.14294,10.24102 -0.85884,32.18473 -10.7724,48.46458c0.00361,0.00056 0.00758,-0.00055 0.0112,0c-1.50994,2.32815 -1.13663,5.40334 0.88649,7.3026c2.02312,1.89926 5.11574,2.07779 7.34398,0.42396c0,0 25.22891,-19.243 25.22891,-56.19114v-57.33333c0,-6.33533 -5.13133,-11.46667 -11.46667,-11.46667zM108.93333,22.93333c-6.33533,0 -11.46667,5.13133 -11.46667,11.46667v45.86667c0,6.33533 5.13133,11.46667 11.46667,11.46667h23.16849c0.14294,10.24102 -0.85885,32.18473 -10.7724,48.46458h0.0112c-1.50995,2.32815 -1.13664,5.40335 0.88648,7.3026c2.02312,1.89926 5.11575,2.07779 7.34399,0.42396c0,0 25.22891,-19.243 25.22891,-56.19114v-57.33333c0,-6.33533 -5.13133,-11.46667 -11.46667,-11.46667z"></path></g></g></svg></div>
-
-    <div class="main">
-      <button mat-fab aria-label="Example icon button with a delete icon">
-        <mat-icon>keyboard_arrow_left</mat-icon>
-      </button>
-      <p class="main-text">
-        There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun. The truth is the universe is a constantly changing, moving, some would say “living” thing because you just never know what you are going to see on any given night of stargazing.
-      </p>
-      <button mat-fab aria-label="Example icon button with a delete icon">
-        <mat-icon>keyboard_arrow_right</mat-icon>
-      </button>
-    </div>
-
-    <div class="company">Google</div>
-    <div class="person">Charlie Mendoza</div>
-    <div class="position">Product Designer</div>
-    <button mat-button class="reviews-btn">Learn more</button>
-  </section>
-
-  <section class="cards">
-    <mat-card class="card">
-      <mat-card-title class="card-title">Start</mat-card-title>
-      <mat-card-content>
-        <h1 class="price">Free</h1>
-        <mat-list-item role="listitem">Long Feature One</mat-list-item>
-        <mat-list-item role="listitem">Feature Two</mat-list-item>
-        <mat-list-item role="listitem">Long Feature Three</mat-list-item>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-stroked-button>Button<mat-icon></mat-icon></button>
-      </mat-card-actions>
-      <mat-card-footer>
-        Two line long feature example with text description for your project
-      </mat-card-footer>
-    </mat-card>
-
-    <mat-card class="card popular-card">
-      <span class="popular-box">Popular</span>
-      <mat-card-title class="card-title">Pro</mat-card-title>
-      <mat-card-content>
-        <h1 class="price">$38<small>/ mo</small></h1>
-        <mat-list-item role="listitem">Long Feature One</mat-list-item>
-        <mat-list-item role="listitem">Feature Two</mat-list-item>
-        <mat-list-item role="listitem">Long Feature Three</mat-list-item>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-stroked-button class="popular-btn">Button<mat-icon></mat-icon></button>
-      </mat-card-actions>
-      <mat-card-footer>
-        Two line long feature example with text description for your project
-      </mat-card-footer>
-    </mat-card>
-
-    <mat-card class="card">
-      <mat-card-title class="card-title">Business</mat-card-title>
-      <mat-card-content>
-        <h1 class="price">$78<small>/ mo</small></h1>
-        <mat-list-item role="listitem">Long Feature One</mat-list-item>
-        <mat-list-item role="listitem">Feature Two</mat-list-item>
-        <mat-list-item role="listitem">Long Feature Three</mat-list-item>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-stroked-button>Button<mat-icon></mat-icon></button>
-      </mat-card-actions>
-      <mat-card-footer>
-        Two line long feature example with text description for your project
-      </mat-card-footer>
-    </mat-card>
-  </section>
-
-  <section class="subscribe">
-    <div class="subscribe-content">
-      <h1 class="subscribe-content-title">Heading</h1>
-      <div class="subscribe-content-text">In the history of modern astronomy, there is probably no one<br>
-        greater leap forward than the building and launch.</div>
-    </div>
-    <form class="form-subscribe">
-      <mat-form-field appearance="outline" class="form-subscribe-input">
-        <mat-label>Email</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <button mat-stroked-button class="form-subscribe-btn">Subscribe</button>
-    </form>
-  </section>
-
-  <section class="footer">
-    <img src="../../../../assets/img/1_page/logo.png" alt="logo" class="footer-logo">
-    <div class="footer-links-wrapper">
-      <div class="footer-links">
-        <mat-list-item role="listitem" class="menu-item"><a href="#">First Link</a></mat-list-item>
-        <mat-list-item role="listitem" class="menu-item"><a href="#">Second Link</a></mat-list-item>
-        <mat-list-item role="listitem" class="menu-item"><a href="#">Third Link</a></mat-list-item>
-        <mat-list-item role="listitem" class="menu-item"><a href="#">Fourth Link</a></mat-list-item>
-        <mat-list-item role="listitem" class="menu-item"><a href="#">Fifth Link</a></mat-list-item>
-      </div>
-      <div class="copyright">© Copyright 2020 Pixsellz - Premium UI Goods for Designers</div>
-    </div>
-
-    <div class="footer-social">
-      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                       width="25" height="25"
-                       viewBox="0 0 172 172"
-                       style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#95a5a6"><path d="M121.83333,21.5h-71.66667c-15.83117,0 -28.66667,12.8355 -28.66667,28.66667v71.66667c0,15.83117 12.8355,28.66667 28.66667,28.66667h40.28383v-49.88717h-16.7915v-19.52917h16.7915v-14.36917c0,-16.65533 10.18383,-25.7355 25.0475,-25.7355c5.0095,-0.01433 10.01183,0.24367 14.99267,0.7525v17.415h-10.234c-8.09833,0 -9.675,3.827 -9.675,9.47433v12.43417h19.35l-2.5155,19.52917h-16.94917v49.91583h11.36633c15.83117,0 28.66667,-12.8355 28.66667,-28.66667v-71.66667c0,-15.83117 -12.8355,-28.66667 -28.66667,-28.66667z"></path></g></g></svg></a>
-      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                       width="25" height="25"
-                       viewBox="0 0 172 172"
-                       style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#95a5a6"><path d="M57.33333,21.5c-19.78717,0 -35.83333,16.04617 -35.83333,35.83333v57.33333c0,19.78717 16.04617,35.83333 35.83333,35.83333h57.33333c19.78717,0 35.83333,-16.04617 35.83333,-35.83333v-57.33333c0,-19.78717 -16.04617,-35.83333 -35.83333,-35.83333zM129,35.83333c3.956,0 7.16667,3.21067 7.16667,7.16667c0,3.956 -3.21067,7.16667 -7.16667,7.16667c-3.956,0 -7.16667,-3.21067 -7.16667,-7.16667c0,-3.956 3.21067,-7.16667 7.16667,-7.16667zM86,50.16667c19.78717,0 35.83333,16.04617 35.83333,35.83333c0,19.78717 -16.04617,35.83333 -35.83333,35.83333c-19.78717,0 -35.83333,-16.04617 -35.83333,-35.83333c0,-19.78717 16.04617,-35.83333 35.83333,-35.83333zM86,64.5c-11.87412,0 -21.5,9.62588 -21.5,21.5c0,11.87412 9.62588,21.5 21.5,21.5c11.87412,0 21.5,-9.62588 21.5,-21.5c0,-11.87412 -9.62588,-21.5 -21.5,-21.5z"></path></g></g></svg></a>
-      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                       width="25" height="25"
-                       viewBox="0 0 172 172"
-                       style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#95a5a6"><path d="M160.53333,39.77213c-5.4868,2.43667 -11.38067,4.0764 -17.56693,4.816c6.31813,-3.784 11.1628,-9.77533 13.44467,-16.91907c-5.90533,3.50307 -12.4528,6.04867 -19.42453,7.42467c-5.57853,-5.94547 -13.52493,-9.66067 -22.31987,-9.66067c-16.8904,0 -30.5816,13.69693 -30.5816,30.5816c0,2.39653 0.2752,4.73573 0.7912,6.966c-25.41587,-1.2728 -47.94787,-13.4504 -63.038,-31.9576c-2.62587,4.51787 -4.13373,9.7696 -4.13373,15.38253c0,10.60667 5.39507,19.9692 13.59947,25.45027c-5.01093,-0.16053 -9.72947,-1.53653 -13.85173,-3.82413c0,0.13187 0,0.25227 0,0.38413c0,14.82067 10.53787,27.18173 24.53293,29.98533c-2.5628,0.69947 -5.26893,1.07213 -8.06107,1.07213c-1.96653,0 -3.8872,-0.19493 -5.75053,-0.54467c3.89293,12.14893 15.1876,20.99547 28.5692,21.242c-10.46333,8.2044 -23.65,13.09493 -37.98333,13.09493c-2.46533,0 -4.902,-0.14333 -7.29853,-0.43c13.5364,8.67453 29.60693,13.73707 46.88147,13.73707c56.25547,0 87.00907,-46.60053 87.00907,-87.0148c0,-1.3244 -0.02867,-2.64307 -0.086,-3.956c5.97987,-4.3172 11.16853,-9.7008 15.26787,-15.82973z"></path></g></g></svg></a>
-      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                       width="25" height="25"
-                       viewBox="0 0 172 172"
-                       style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#95a5a6"><path d="M154.671,44.333c-1.64833,-6.16333 -6.50733,-11.02233 -12.67067,-12.67067c-11.18,-2.99567 -56.00033,-2.99567 -56.00033,-2.99567c0,0 -44.82033,0 -56.00033,2.99567c-6.16333,1.64833 -11.02233,6.50733 -12.67067,12.67067c-2.99567,11.18 -2.99567,41.667 -2.99567,41.667c0,0 0,30.487 2.99567,41.667c1.64833,6.16333 6.50733,11.02233 12.67067,12.67067c11.18,2.99567 56.00033,2.99567 56.00033,2.99567c0,0 44.82033,0 56.00033,-2.99567c6.1705,-1.64833 11.02233,-6.50733 12.67067,-12.67067c2.99567,-11.18 2.99567,-41.667 2.99567,-41.667c0,0 0,-30.487 -2.99567,-41.667zM71.66667,104.619v-37.238c0,-2.75917 2.9885,-4.47917 5.375,-3.10317l32.25,18.619c2.3865,1.376 2.3865,4.83033 0,6.20633l-32.25,18.619c-2.3865,1.38317 -5.375,-0.344 -5.375,-3.10317z"></path></g></g></svg></a>
-    </div>
-  </section>
+    </section>
+  </div>
 </div>
