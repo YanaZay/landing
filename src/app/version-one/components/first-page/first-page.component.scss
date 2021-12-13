@@ -277,6 +277,7 @@
         }
       }
       .short-img {
+        width: 90%;
         position: absolute;
         bottom: 0;
         margin-left: auto;
@@ -543,6 +544,7 @@
         width: 400px;
         .footer-links {
           display: flex;
+          flex-wrap: wrap;
           justify-content: space-between;
           .mat-list-item.menu-item {
             font: {
@@ -577,7 +579,7 @@
     }
   }
 
-  @include media-md {
+  @media (min-width: 768px) {
     .header {
       .mat-toolbar-row, .mat-toolbar-single-row.menu {
         display: none;
@@ -645,9 +647,112 @@
       }
 
       .circle-statistic {
+        height: auto;
+        display: block;
+        .circle {
+          #chart {
+            width: auto;
+            text-align: center;
+            margin-top: 2rem;
+          }
+        }
+        .points-list {
+          width: auto;
+          justify-content: end;
+        }
+        .description {
+          width: auto;
+          text-align: start;
+          padding: 1rem;
+        }
+      }
 
+      .short {
+        height: auto;
+        position: relative;
+        .short-content {
+          width: auto;
+          margin: 2rem 1rem;
+          padding-bottom: 10rem;
+          .images {
+            flex-wrap: wrap;
+            &>* {
+              width: 50%;
+            }
+          }
+        }
+        .short-img {
+          position: absolute;
+          width: 30rem;
+        }
+      }
+
+      .reviews {
+        height: auto;
+        .commas {
+          margin-top: 2rem;
+        }
+        .main {
+          margin: 0;
+          padding: 2rem 1rem;
+          button {
+            display: none;
+          }
+        }
+        .company {
+          margin: 0;
+        }
+        .reviews-btn {
+          margin-bottom: 2rem;
+        }
+      }
+
+      .cards {
+        height: auto;
+        &>* {
+          margin: 1rem 0;
+        }
+      }
+
+      .subscribe {
+        height: auto;
+        display: block;
+        padding: 2rem;
+        text-align: start;
+        .form-subscribe {
+          .form-subscribe-btn {
+            margin: 0;
+          }
+        }
+      }
+
+      .footer {
+        display: block;
+        text-align: center;
+        padding: 2rem 1rem;
+        .footer-links-wrapper {
+          width: auto;
+          text-align: center;
+          .footer-links {
+            padding: 1rem 0;
+            justify-content: center;
+            .mat-list-item.menu-item {
+              padding-top: 1rem;
+              width: 33%;
+            }
+          }
+          .copyright {
+            margin: 0;
+            padding: 2rem 0;
+            position: static;
+          }
+        }
+        .footer-social {
+          padding-bottom: 2rem;
+        }
       }
     }
   }
 }
+
 

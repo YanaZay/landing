@@ -1,44 +1,44 @@
-.header {
-  position: relative;
-  &.upper {
-    height: 45px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #24afb5;
-    align-items: center;
-    .versions {
-      margin-left: 1rem;
-      color: #ffffff;
-      .active {
-        background-color: #969696;
+:host {
+  .header {
+    position: relative;
+    &.upper {
+      height: 45px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #24afb5;
+      align-items: center;
+      .versions {
+        margin-left: 1rem;
+        color: #ffffff;
+        .active {
+          background-color: #969696;
+        }
       }
     }
   }
-}
 
-.screen-wrapper.iPadScreen {
-  position: relative;
-  .ipad-screen {
-    height: 90vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-
+  .screen-wrapper.iPadScreen {
+    position: relative;
+    .ipad-screen {
+      height: 90vh;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+    }
+    .screen {
+      position: absolute;
+      width: 768px;
+      height: 685px;
+      top: 92px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      overflow: auto;
+      overflow-x: hidden;
+    }
   }
-  .screen {
-    position: absolute;
-    width: 515px;
-    height: 685px;
-    top: 92px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    overflow: auto;
-    overflow-x: hidden;
-  }
+
 }
-
-
