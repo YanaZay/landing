@@ -1,6 +1,6 @@
 :host {
   .header {
-    height: 88px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +33,9 @@
           }
         }
       }
+    }
+    .menu-item-img {
+      display: none;
     }
   }
 
@@ -282,6 +285,7 @@
     .news {
       height: 600px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       padding: 110px 145px 0;
       border-bottom: 1px solid #dbdbdb;
@@ -485,6 +489,29 @@
             color: #24afb5;
           }
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .header {
+      .mat-toolbar-row, .mat-toolbar-single-row.menu {
+        display: none;
+      }
+      .menu-item-img {
+        display: block;
+        margin-right: 2rem;
+        cursor: pointer;
+      }
+    }
+
+    .main-content {
+      .news {
+
+      }
+
+      .sections {
+        padding: 0;
       }
     }
   }

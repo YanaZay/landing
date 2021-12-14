@@ -1,5 +1,3 @@
-@import "src/assets/config";
-
 :host {
   .header {
     .medium-menu {
@@ -7,8 +5,8 @@
     }
     ::ng-deep {
       .mat-toolbar-row, .mat-toolbar-single-row.menu {
-        height: 100%;
-        display: flex;
+        height: auto;
+        display: flex!important;
         justify-content: center;
         text-align: center;
         padding: 20px 0;
@@ -35,7 +33,7 @@
   }
   .main-content {
     .log-page {
-      height: calc(100vh - 133px);
+      height: 100vh;
       display: flex;
       position: relative;
       border-bottom: 1px solid #dbdbdb;
@@ -172,9 +170,11 @@
           }
         }
       }
-      img.one-list-img {
-        width: 635px;
-        height: 400px;
+      .img-wrapper {
+        img.one-list-img {
+          width: 635px;
+          height: 400px;
+        }
       }
     }
 
@@ -198,7 +198,8 @@
         width: 30vw;
         .point-item {
           display: flex;
-          margin-right: 100px;
+          margin: 0 auto;
+          width: 50%;
           .point {
             background-color: #24afb5;
             width: 24px;
@@ -246,11 +247,11 @@
     }
 
     .short {
-      height: 900px;
+      height: 100vh;
       position: relative;
       border-bottom: 1px solid #dbdbdb;
       .short-content {
-        margin: 100px auto 0;
+        margin: 3rem auto 0;
         width: 730px;
         text-align: center;
         .short-title {
@@ -277,7 +278,7 @@
         }
       }
       .short-img {
-        width: 90%;
+        width: 80%;
         position: absolute;
         bottom: 0;
         margin-left: auto;
@@ -579,11 +580,16 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @keyframes expand{
+    from {height:0}
+    to {height:450px}
+  }
+
+  @media screen and (max-width: 768px) {
     .header {
       .mat-toolbar-row, .mat-toolbar-single-row.menu {
         display: none;
-        .mat-list-item.menu-img {
+        .menu-img {
           display: none!important;
         }
       }
@@ -606,16 +612,17 @@
         text-align: start;
         .log-part {
           height: auto;
-          position: static;
+          //position: static;
           padding: 0 1rem;
           .mat-card.log-card {
             width: auto;
           }
         }
         img {
+          width: 100%;
+          height: auto;
           position: static;
-          height: 70vh;
-          margin-left: 3rem;
+          padding: 3rem 0 3rem 3rem;
         }
       }
 
@@ -638,11 +645,12 @@
         .one-list {
           width: auto;
         }
-        img.one-list-img {
-          width: auto;
-          height: 20rem;
-          margin-left: 1.5rem;
-          margin-bottom: 2rem;
+        .img-wrapper {
+          text-align: center;
+          img.one-list-img {
+            width: auto;
+            margin: 0 0 3rem;
+          }
         }
       }
 
@@ -659,6 +667,9 @@
         .points-list {
           width: auto;
           justify-content: end;
+          .point-item {
+            padding-left: 5rem;
+          }
         }
         .description {
           width: auto;
@@ -676,9 +687,6 @@
           padding-bottom: 10rem;
           .images {
             flex-wrap: wrap;
-            &>* {
-              width: 50%;
-            }
           }
         }
         .short-img {
@@ -722,6 +730,7 @@
         .form-subscribe {
           .form-subscribe-btn {
             margin: 0;
+            margin-left: 2rem;
           }
         }
       }
@@ -749,6 +758,49 @@
         }
         .footer-social {
           padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .main-content {
+      .section-one-line {
+        .img-wrapper {
+          img.one-list-img {
+            width: 80vw;
+            height: auto;
+          }
+        }
+      }
+
+      .circle-statistic {
+        .points-list {
+          .point-item {
+            padding-left: 2rem;
+          }
+        }
+      }
+
+      .short {
+        .short-content {
+          .images {
+            margin: 2rem;
+          }
+        }
+        .short-img {
+          width: 90vw;
+        }
+      }
+
+      .subscribe {
+        .form-subscribe {
+          .form-subscribe-input {
+            width: 100%;
+          }
+          .form-subscribe-btn {
+            margin: 0;
+          }
         }
       }
     }
